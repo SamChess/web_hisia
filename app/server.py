@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/yriq76zcu0p8plb/model.pth?dl=1'
+export_file_url = 'https://www.dropbox.com/s/yriq76zcu0p8plb/model.pth?raw=1'
 export_file_name = 'model.pth'
 
 classes = ['angry', 'calm', 'disgust', 'fearful', 'happy', 'neutral', 'sad', 'surprised']
