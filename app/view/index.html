@@ -3,8 +3,18 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
+  <script src='../static/recorder.js'></script>
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 </head>
 <body>
+  <div id="controls">
+    	 <button id="recordButton">Record</button>
+    	 <button id="pauseButton" disabled>Pause</button>
+    	 <button id="stopButton" disabled>Stop</button>
+      </div>
+      <div id="formats">Format: start recording to see sample rate</div>
+    	<p><strong>Recordings:</strong></p>
+    	<ol id="recordingsList"></ol>
 <div>
   <div class='center'>
     <div class='title'>Hisia Web App</div>
