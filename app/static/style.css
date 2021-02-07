@@ -18,6 +18,7 @@ body {
 	overflow-wrap: break-word;
 	color:black;
 	margin:2em;
+	background-color: #fff;
 }
 
 h1 {
@@ -45,7 +46,7 @@ red {
   max-width: 28em;
 } 
 
-button {
+/* button {
   flex-grow: 1;
   height: 3.5rem;
   min-width: 2rem;
@@ -61,7 +62,7 @@ button {
   color:#ffffff;
   font-weight: bold;
   font-size: 1.5rem;
-}
+} */
 
 button:hover, button:focus {
   outline: none;
@@ -104,9 +105,6 @@ li {
 #recordingsList{
 	max-width: 28em;
 }
-body {
-    background-color: #fff;
-}
 
 .no-display {
     display: none;
@@ -142,7 +140,7 @@ body {
 .result-label {
     margin-top: 0.5em;
     padding: 10px;
-    font-size: 13px;
+    font-size: 40px;
 }
 
 button.choose-file-button {
