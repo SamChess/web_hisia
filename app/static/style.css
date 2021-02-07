@@ -112,13 +112,6 @@ li {
     display: none;
 }
 
-.center {
-    margin: auto;
-    padding: 10px 50px;
-    text-align: center;
-    font-size: 14px;
-}
-
 .title {
     font-size: 30px;
     margin-top: 1em;
