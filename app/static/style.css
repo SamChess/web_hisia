@@ -46,7 +46,7 @@ red {
   max-width: 28em;
 } 
 
-/* button {
+button {
   flex-grow: 1;
   height: 3.5rem;
   min-width: 2rem;
@@ -62,7 +62,7 @@ red {
   color:#ffffff;
   font-weight: bold;
   font-size: 1.5rem;
-} */
+}
 
 button:hover, button:focus {
   outline: none;
