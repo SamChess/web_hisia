@@ -6,40 +6,42 @@
   <script src='../static/client.js'></script>
 </head>
 <body>
-  <div id="controls">
-    	 <button id="recordButton">Record</button>
-    	 <button id="pauseButton" disabled>Pause</button>
-    	 <button id="stopButton" disabled>Stop</button>
-  </div>
-  <div id="formats">Format: start recording to see sample rate</div>
-    	<p><strong>Recordings:</strong></p>
-    	<ol id="recordingsList"></ol>
-  <div>
-    <div class='title'>Hisia Web App</div>
-    <p>
-      Use <strong> Spectograms Images of sounds from the crowd</strong>
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Spectogram Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
-      <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-      </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze Emotions</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
+  <div id="center">
+    <div id="controls">
+         <button id="recordButton">Record</button>
+         <button id="pauseButton" disabled>Pause</button>
+         <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate</div>
+        <p><strong>Recordings:</strong></p>
+        <ol id="recordingsList"></ol>
+    <div>
+      <div class='title'>Hisia Web App</div>
+      <p>
+        Use <strong> Spectograms Images of sounds from the crowd</strong>
+      </p>
+      <div class='content'>
+        <div class='no-display'>
+          <input id='file-input'
+                 class='no-display'
+                 type='file'
+                 name='file'
+                 accept='image/*'
+                 onchange='showPicked(this)'>
+        </div>
+        <button class='choose-file-button' type='button' onclick='showPicker()'>Select Spectogram Image</button>
+        <div class='upload-label'>
+          <label id='upload-label'>No file chosen</label>
+        </div>
+        <div>
+          <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        </div>
+        <div class='analyze'>
+          <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze Emotions</button>
+        </div>
+        <div class='result-label'>
+          <label id='result-label'></label>
+        </div>
       </div>
     </div>
   </div>
