@@ -1,40 +1,56 @@
 <html lang='en'>
-<head>
-  <meta charset='utf-8'>
-  <link rel='stylesheet' href='../static/style.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src='../static/client.js'></script>
-</head>
-<body>
-  <div class="center">
-    <div id="controls">
-         <button id="recordButton">Record</button>
-         <button id="pauseButton" disabled>Pause</button>
-         <button id="stopButton" disabled>Stop</button>
-    </div>
-    <div id="formats">Format: start recording to see sample rate</div>
-        <p><strong>Recordings:</strong></p>
-        <ol id="recordingsList"></ol>
-    <div>
-      <div class='title'>Hisia Web App</div>
-      <p>
-        Use <strong> Spectograms Images of sounds from the crowd</strong>
-      </p>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='style.css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src='../static/client.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Hisia Web App</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="margin-top:50px; background-color:#F2F2F2" >
+      <h2>Record the Audio</h2>
+      <div id="controls">
+             <button type="button" id="recordButton">Record</button>
+             <button id="pauseButton" disabled>Pause</button>
+             <button id="stopButton" disabled>Stop</button>
+        </div>
+            <h3><strong>Recordings:</strong></h3>
+            <ol id="recordingsList"></ol> 
+
+         <p><a href="https://convert.ing-now.com/audio-spectrogram-creator/" target="_blank">Click the link to covert the audio to Mel Spectrogram</a> </p>
       <div class='content'>
         <div class='no-display'>
           <input id='file-input'
-                 class='no-display'
-                 type='file'
-                 name='file'
-                 accept='image/*'
-                 onchange='showPicked(this)'>
+             class='no-display'
+             type='file'
+             name='file'
+             accept='image/*'
+             onchange='showPicked(this)'>
         </div>
         <button class='choose-file-button' type='button' onclick='showPicker()'>Select Spectogram Image</button>
         <div class='upload-label'>
           <label id='upload-label'>No file chosen</label>
         </div>
         <div>
-          <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+          <img id='image-picked' class='no-display' alt='Chosen Image' height='400' width="400">
         </div>
         <div class='analyze'>
           <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze Emotions</button>
@@ -44,8 +60,7 @@
         </div>
       </div>
     </div>
-  </div>
-   <script src='../static/recorder.js'></script>
+  <script src='recorder.js'></script>
   <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
-</body>
+  </body>
 </html>
